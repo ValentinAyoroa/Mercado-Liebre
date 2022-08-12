@@ -1,8 +1,24 @@
-header{background-color:#EAC926; border-color: black; padding: 20px 0 0;}
+header{background-color:#EAC926; padding: 20px 0 0;}
 
 .centrado{text-align: center;}
 
-body{background-color: gainsboro; font-family:'Roboto', sans-serif; }
+body{background-color: #ebebeb; font-family:'Roboto', sans-serif; font-size: 14px;}
 
 section.publicacion{background-color: white; padding: 0 12px 8px;}
+
+footer{background-color: white; padding: 20px;}
+
+.titular{font-size:  24px;}
+
+.precio{font-size:  24px;}
+
+.descuento{font-size: 16px; color: #00a650;}
+
+.descripcion{font-size: 16px;}
+
+.envio-gratis{font-size:16px; color: #00a650; font-weight: bold; }
+
+.emoji{text-align: center; color:#1259c3; font-size: 40px; margin: 20px 0 0 0}
+
+.titulares-footer{text-align: center; color:#666; font-size: 20px;}
 

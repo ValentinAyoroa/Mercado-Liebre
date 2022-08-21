@@ -1,24 +1,162 @@
-header{background-color:#EAC926; padding: 20px 0 0;}
+*{
+    box-sizing: border-box;
+}
 
-.centrado{text-align: center;}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #ebebeb
+}
 
-body{background-color: #ebebeb; font-family:'Roboto', sans-serif; font-size: 14px;}
+.main-header{
+    background-color:  #EAC926;
+    padding: 20px;
+}
 
-section.publicacion{background-color: white; padding: 0 12px 8px;}
 
-footer{background-color: white; padding: 20px;}
+.copy-header{
+    font-size: 12px;
+    text-align: center;
+}
 
-.titular{font-size:  24px;}
+.logo{
+    width: 150px;
+}
 
-.precio{font-size:  24px;}
+.search-bar{
+    width: 120px;
+}
 
-.descuento{font-size: 16px; color: #00a650;}
+.nav-button{
+    background-color: #03264C;
+    color: white;
+    display: block;
+    max-width: 40px;
+    padding: 10px 0 ;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto
+}
 
-.descripcion{font-size: 16px;}
+.nav-bar{
+    list-style-type: none;
+    padding: 0;
+    margin:0
+}
 
-.envio-gratis{font-size:16px; color: #00a650; font-weight: bold; }
+.nav-bar li a{
+    text-decoration: none;
+    color:black
+}
 
-.emoji{text-align: center; color:#1259c3; font-size: 40px; margin: 20px 0 0 0}
+.login-bar{
+    list-style-type: none;
+    padding: 0;
+    margin:0
+}
 
-.titulares-footer{text-align: center; color:#666; font-size: 20px;}
+.login-bar li a{
+    text-decoration: none;
+    color:black
+}
 
+.main{
+    background-color: #ebebeb;
+}
+
+.banner{
+    width: 100vw;
+}
+
+.title-main{
+    padding-left: 20px;
+}
+
+.products-last-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products-offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product{
+    width: 90vw;
+    background-color: white;
+    margin: 10px;
+}
+
+.img-product{
+    width: 90vw;
+}
+
+.description-product{
+    border-top: 2px solid #ebebeb;
+    padding: 15px;
+}
+
+.price-discount{
+    display: flex;
+}
+
+.price{
+    flex-grow: 0.3;
+}
+
+.discount{
+    color:#39b54a;
+    flex-grow: 0.7;
+}
+
+.emoji-truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    margin-right: 10px;
+}
+
+.footer-text{
+    text-align: center;
+    background-color: #FFF;
+    margin: 5px;
+    padding: 10px;
+}
+
+.title-footer{
+    color: #666
+}
+
+.emoji-footer{
+    color: #1259c3;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+@media (max-width: 450px) {
+    .top-header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    ul{
+        display: none;
+    }
+
+}
+
+@media (min-width: 950px){}

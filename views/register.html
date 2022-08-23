@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fontawesome.com/icons" rel="stylesheet">
+    <link rel='stylesheet' href="/css/style-register.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Registrate en Mercado Liebre</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="top-header">
+            <img src="/img/logo-mercado-liebre.svg" class="logo">
+            <div class="search">
+            <form>
+            <input type="text" placeholder="Busca productos" class="search-bar">
+            <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            </div>
+            <h5 class="copy-header">
+                <i class="fas fa-hand-holding-usd"></i>
+                Compra en cuotas y sin tarjeta de credito
+            </h5>
+        </div>
+        <div class="bottom-header">
+            <a href="#" class="nav-button">
+                <i class="fas fa-bars"></i>
+            </a>
+            <nav class="nav-bar">
+                <ul class="nav-bar">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="login-bar">
+                    <li><a href="#">Crea tu cuenta</a></li>
+                    <li><a href="#">Ingresa</a></li>
+                    <li><a href="#">Mis compras</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="/register" method="post" class="form-register">
+            <div>
+                <input type="text" name="name" placeholder="Nombre y Apellido">
+            </div>
+            <div>
+                <input type="text" name="user" placeholder="Nombre de usuario">
+            </div>
+            <div>
+                <input type="email" name="email" placeholder="E-mail">
+            </div>
+            <h3>Fecha de nacimiento</h3>
+            <div>
+                <input type="date" name="date">
+            </div>
+            <div>
+                <input type="text" name="domicilio" placeholder="Domicilio">
+            </div>
+            <h3>Perfil del usuario</h3>
+            <div>
+                <input type="radio" name="profile" value="Comprador" id="Comprador">
+                <label for="Comprador">Comprador</label>
+                <input type="radio" name="profile" value="Vendedor" id="Vendedor">
+                <label for="Vendedor">Vendedor</label>
+            </div>
+            <h3>Intereses</h3>
+                <input type="checkbox" name="interes" value="Electro" id="electro">
+                <label for="electro">Electro</label>
+            <br>
+                <input type="checkbox" name="interes" value="Moda" id="moda">
+                <label for="moda">Moda</label>
+            <br>
+                <input type="checkbox" name="interes" value="Hogar" id="hogar">
+                <label for="hogar">Hogar</label>
+            <br>
+                <input type="checkbox" name="interes" value="Jugueteria" id="jugueteria">
+                <label for="jugueteria">Jugueteria</label>
+            <br>
+                <input type="checkbox" name="interes" value="Vida sana" id="vida">
+                <label for="vida">Vida sana</label>
+            <br>
+            <h3>Ingrese su imagen de usuario</h3>
+            <div>
+                <input type="file" name="avatar" id="image" accept=".jpg" multiple>
+            </div>
+            <div>
+                <input type="password" name="password" placeholder="Contraseña">
+            </div>
+            <div>
+                <input type="password" name="password" placeholder="Confirmar contraseña">
+            </div>
+            <div>
+                <button type="submit">Registrarse</button>
+            </div>
+            <div>
+                <button type="reset">Cancelar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

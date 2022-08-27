@@ -8,10 +8,28 @@ h3.title-main{
 
 article{
     background-color: white;
+    position: relative;
 }
 
 article img.img-product{
     width: 100%;
+    padding-bottom: 20px;
+}
+
+article div.emoji-truck{
+    width: 30px;
+    border: 1px solid #39b54a;
+    background-color: white;
+    border-radius: 70%;
+    text-align: center;
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+}
+
+article div.emoji-truck i{ 
+    padding: 5px;
+    color: #39b54a;
 }
 
 div.price-discount{
@@ -76,11 +94,23 @@ h4.product-name{
         padding-top: 20px;
     }
 
-    div.description-product{
-        visibility: visible;
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    article img.img-product:hover{
+    article div.emoji-truck{
+        transition: transform 450ms
+    }
+
+    article div.emoji-truck:hover{
+        transform: rotate(-90deg);
+    }
+
+    div.description-product{
+        visibility: hidden;
+    }
+
+    article:hover div.description-product{
         visibility: visible;
     }
 

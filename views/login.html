@@ -7,7 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="https://fontawesome.com/icons" rel="stylesheet">
     <link rel='stylesheet' href="/css/style.css">
-    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
     <header class="header">
         <div class="top-header">
             <a href="/">
-            <img src="/img/logo-mercado-liebre.svg" class="logo">
+                <img src="/img/logo-mercado-liebre.svg" class="logo">
             </a>
             <form class="search-bar">
                 <div class="search-bar">
@@ -50,64 +50,15 @@
         </div>
     </header>
     <main>
-        <h2 class="copy-register">Crea tu cuenta</h2>
-        <form action="/register" method="post" class="form-register">
-            <div class="bar">
-                <input type="text" name="name" placeholder="Nombre y Apellido">
-            </div>
-            <div class="bar">
+        <form action="/login" method="post" class="login">
+            <div>
                 <input type="text" name="user" placeholder="Nombre de usuario">
             </div>
-            <div class="bar">
-                <input type="email" name="email" placeholder="E-mail">
-            </div>
-            <h3>Fecha de nacimiento</h3>
-            <div class="bar">
-                <input type="date" name="date">
-            </div>
-            <div class="bar">
-                <input type="text" name="domicilio" placeholder="Domicilio">
-            </div>
-            <h3>Perfil del usuario</h3>
-            <div class="radio">
-                <input type="radio" name="profile" value="Comprador" id="Comprador">
-                <label for="Comprador">Comprador</label>
-                <input type="radio" name="profile" value="Vendedor" id="Vendedor">
-                <label for="Vendedor">Vendedor</label>
-            </div>
-            <h3>Intereses</h3>
-            <div class="checkbox">
-                <input type="checkbox" name="interes" value="Electro" id="electro">
-                <label for="electro">Electro</label>
-            <br>
-                <input type="checkbox" name="interes" value="Moda" id="moda">
-                <label for="moda">Moda</label>
-            <br>
-                <input type="checkbox" name="interes" value="Hogar" id="hogar">
-                <label for="hogar">Hogar</label>
-            <br>
-                <input type="checkbox" name="interes" value="Jugueteria" id="jugueteria">
-                <label for="jugueteria">Jugueteria</label>
-            <br>
-                <input type="checkbox" name="interes" value="Vida sana" id="vida">
-                <label for="vida">Vida sana</label>
-            <br>
-            </div>
-            <h3>Ingrese su imagen de usuario</h3>
-            <div class="bar">
-                <input type="file" name="avatar" id="image" accept=".jpg" multiple>
-            </div>
-            <div class="bar">
+            <div>
                 <input type="password" name="password" placeholder="Contraseña">
             </div>
-            <div class="bar">
-                <input type="password" name="password" placeholder="Confirmar contraseña">
-            </div>
-            <div class="bar">
-                <button class="submit" type="submit">Registrarse</button>
-            </div>
-            <div class="bar">
-                <button class="reset"r type="reset">Cancelar</button>
+            <div>
+                <button type="submit">Ingresar</button>
             </div>
         </form>
     </main>

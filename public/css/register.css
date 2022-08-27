@@ -1,0 +1,98 @@
+h2.copy-register{
+    color: #666;
+}
+
+form.form-register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.bar input{
+    width: 100%;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+
+form.form-register h3{
+    align-self: flex-start;
+}
+
+div.radio label{
+    margin: 20px;
+}
+
+div.checkbox{
+    align-self: flex-start;
+}
+
+div.checkbox input{
+    margin: 15px;
+}
+
+form button.submit{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #1259c3;
+    color: white
+}
+
+form button.reset{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #9e0e4f;
+    color: white
+}
+
+
+@media (max-width:450px) {
+    h2.copy-register{
+        padding-left: 7%;
+        padding-top: 20px;
+    }
+
+    form.form-register h3{
+        padding-left: 7%;
+    }
+
+    div.bar{
+        width: 85vw;
+}
+
+    div.checkbox{
+        align-self: flex-start;
+        margin-left: 30px;
+    }
+}
+
+@media (min-width:450px) {
+    h2.copy-register{
+        padding-left: 25%;
+        padding-top: 20px;
+    }
+    
+    form.form-register{
+        margin-top: 20px;
+    }
+
+    div.bar{
+        width: 50vw;
+    }
+
+    form.form-register h3{
+        padding-left: 25%;
+    }
+
+    div.checkbox{
+        padding-left: 25%;
+    }
+}

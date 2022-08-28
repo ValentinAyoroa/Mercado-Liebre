@@ -94,4 +94,13 @@ form button.reset{
     div.checkbox{
         padding-left: 25%;
     }
+
+    form.form-register div button.submit:hover{
+        background-color: #0022AA;
+    }
+
+    form.form-register div button.reset:hover{
+        background-color: #640223;
+    }
 }
+

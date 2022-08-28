@@ -1,5 +1,5 @@
 div img.banner{
-    width: 100vw;
+    width: 100%;
 }
 
 h3.title-main{
@@ -55,7 +55,7 @@ h4.product-name{
     margin-top: 0
 }
 
-@media(max-width: 450px){
+@media(max-width: 500px){
     h3.title-main{
         font-size: 25px;
         text-align: center;
@@ -69,12 +69,33 @@ h4.product-name{
 
     article{
         width: 90%;
-        margin: 0 18px 15px 18px;
+        margin: 0 18px 40px 18px;
     }
 
 }
 
-@media (min-width: 450px) {
+@media (min-width:501px) and (max-width: 900px){
+    h3.title-main{
+        padding-left:30px;
+    }
+
+    section.products{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 25px
+    }
+
+    article{
+        width: 40%;
+        flex-grow: 0.50;
+        padding-top: 20px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 901px) {
     h3.title-main{
         padding-left: 40px;
     }
